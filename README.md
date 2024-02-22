@@ -44,13 +44,12 @@ Potentiometers are commonly used to control electrical devices such as volume co
 CIRCUIT DIAGRAM
 
 
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/163530788-eec3cdc3-95e8-4d2d-8349-6d0ea4c9439c.png)
 
 **FIGURE -01
 **
+
+
 
 **PROCEDURE:**
 
@@ -65,25 +64,58 @@ CIRCUIT DIAGRAM
 9.	Ensure safety before powering up the device 
 
 
-
-**PROGRAM** 
+PROGRAM:
  
+```
+int led=4;  
+int sensorpot;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  sensorpot=analogRead(A0);
+  //Serial.print("data=");
+  Serial.println(sensorpot);
+  delay(500);
+  if(sensorpot>500)
+
+{  
+  digitalWrite(led,HIGH);
+    delay(100);
+  digitalWrite(led,LOW);
+    delay(100);
+}
+  
+ else
+{  
+   digitalWrite(led,LOW);
+     delay(100);
+ } 
+}  
+
+```
+Serial Moniter:
+
+
+<img width="344" alt="robotics2 serial moniter" src="https://github.com/EPriyadharshini/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870831/b523d58f-3196-420c-b083-ce67e1bdca82">
+
+
+
+Simulation output: 
+
+
+
+<img width="617" alt="robotics 2 org" src="https://github.com/EPriyadharshini/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870831/9df7302b-4f68-4e37-8bef-b5ce48410279">
 
 
 
 
 
-
-
-
-
-**
-**Simulation output:** 
-**
-
-
-[My image](username.github.com/repository/img/image.jpg)
-
+<img width="476" alt="robotics 2 -schemetric view" src="https://github.com/EPriyadharshini/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870831/98d92203-cc17-4984-8494-fb6544715214">
 
 
 
