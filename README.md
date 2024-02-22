@@ -113,6 +113,8 @@ Simulation output:
 
 
 
+schemetric view :
+
 
 
 <img width="476" alt="robotics 2 -schemetric view" src="https://github.com/EPriyadharshini/EXPERIMENT-NO--02-INTERFACING-ANALOG-INPUT-SENSOR-POT-WITH-ARDUINO-/assets/144870831/98d92203-cc17-4984-8494-fb6544715214">
@@ -122,4 +124,6 @@ Simulation output:
 
 
 
-**RESULT: ** Arduino uno analog input functioning is learned and interfaced with digital input switch .
+RESULT: 
+
+Arduino uno analog input functioning is learned and interfaced with digital input switch .
